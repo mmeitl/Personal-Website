@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personalwebsite</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+      
+
+    
+    <div class="parallax-container">
+<div class="parallax"><img src="assets/bagan.jpg"></div>
+  <nav>
+  <div class="nav-wrapper ">
+    
+      
+        <a href="#!" class="brand-logo center">Matthew Meitl</a><br >
+
+        
+
+      
+    
+  </div>
+  </nav>
+<br ><br ><br ><br ><br ><br ><br ><br >
+  <div class="container">
+    <div class ="row ">
+     <div class="col s12 m6">
+    <ul class="collapsible cyan darken-4 z-depth-4 " data-collapsible="accordion" id="test">
+    <li>
+      <div class="collapsible-header cyan darken-4 z-depth-1"><i class="material-icons cyan-text text-lighten-1">About</i></div>
+      <div class="collapsible-body z-depth-2 cyan-text text-lighten-3"><p>I am a web developer located in Austin, TX that has done several projects in Ruby on Rails, HTML, CSS, and JS. I have recieved a lot of coding experience through <%= link_to "theFireHoseProject",  "https://www.thefirehoseproject.com/", :target => "_blank" %>. </p></div>
+    </li>
+    <li>
+      <div class="collapsible-header cyan darken-4 z-depth-1"><i class="material-icons cyan-text text-lighten-1">Portfolio</i></div>
+      <div class="collapsible-body z-depth-2"><p class="center cyan-text text-lighten-3">Here are Several of my Projects:</p><ul class="center"><li><%= link_to "Flixter",  "https://flixter-matt-meitl.herokuapp.com/", :target => "_blank" %></li><li><%= link_to "Nomster",  "https://nomster-matt-meitl.herokuapp.com/", :target => "_blank" %></li><li><%= link_to "Splurty",  "https://splurty-matt-meitl.herokuapp.com/", :target => "_blank" %></li></ul></div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    
+  
+</div>
+
+<%= yield %>
+
+        <footer class="page-footer cyan darken-4 ">
+          <div class="container">
+            <div class="row">
+
+
+              
+                
+                <ul class ="center-align">
+                  <li><%=link_to image_tag("/assets/linkedin.png"), "https://www.linkedin.com/in/mmeitl", :target => "_blank" %><%=link_to image_tag("/assets/github.png"), "https://github.com/mmeitl", :target => "_blank" %><%=link_to image_tag("/assets/facebook.png"), "https://www.facebook.com/mlmeitl", :target => "_blank" %></li>
+                </ul>
+              
+            </div>
+
+          
+        </footer> 
+     
+      
+    </div>
+  
+
+            
+
+</body>
+</html>

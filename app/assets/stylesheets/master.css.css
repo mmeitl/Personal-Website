@@ -1,0 +1,41 @@
+body {
+  background: url("/assets/dark_dotted.png"); }
+
+.collapsible {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16pt;
+  font-family: 'Indie Flower', cursive; }
+
+.parallax-container {
+  height: 700px;
+  margin: 10px; }
+
+.brand-logo {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 50px !important; }
+
+footer {
+  font-family: 'Indie Flower', cursive;
+  margin: 10px;
+  margin-bottom: 0px; }
+
+.nav-wrapper {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px; }
+
+.parallax {
+  margin: 10px; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
+nav {
+  background: rgba(0, 0, 0, 0.4); }
+
+/*# sourceMappingURL=master.css.css.map */
