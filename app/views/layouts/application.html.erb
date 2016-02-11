@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   
@@ -12,9 +13,9 @@
 
     
     <div class="parallax-container">
-<div class="parallax"><img src="assets/bagan.jpg"></div>
+<div class="parallax responsive-img"><img src="assets/bagan.jpg"></div>
   <nav>
-  <div class="nav-wrapper ">
+  <div class="nav-wrapper">
     
       
         <a href="#!" class="brand-logo center">Matthew Meitl</a><br >
@@ -28,7 +29,7 @@
 <br ><br ><br ><br ><br ><br ><br ><br >
   <div class="container">
     <div class ="row ">
-     <div class="col s12 m6">
+     <div class="col s12 m8 l8">
     <ul class="collapsible cyan darken-4 z-depth-4 " data-collapsible="accordion" id="test">
     <li>
       <div class="collapsible-header cyan darken-4 z-depth-1"><i class="material-icons cyan-text text-lighten-1">About</i></div>
@@ -48,7 +49,7 @@
 
 <%= yield %>
 
-        <footer class="page-footer cyan darken-4 ">
+        <footer class="page-footer cyan darken-4">
           <div class="container">
             <div class="row">
 
@@ -72,3 +73,21 @@
 
 </body>
 </html>
+
+
+<script>
+    
+    $(document).ready(function(){
+      $('.parallax').parallax();
+      $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+        
+    });
+    
+  var options = [
+    {selector: '#staggered', offset: 200, callback: 'Materialize.showStaggeredList("#staggered")' },
+  ];
+  Materialize.scrollFire(options);
+  
+</script>
